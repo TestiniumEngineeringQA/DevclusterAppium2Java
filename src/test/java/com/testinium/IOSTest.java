@@ -31,6 +31,23 @@ public class IOSTest extends BaseTest {
         kampanyalar.click();
     }
 
+    public void basicIosFailTest() throws InterruptedException {
+        System.out.println("StartIos test");
+        fingerSwipe(driver, 100, 800, 100, 600, 1000);
+        Thread.sleep(2000);
+
+        WebElement dashboardButton = driver.findElement(AppiumBy.xpath("//XCUIElementTypeStaticText[@name=\"81 ilde mağazadan ÜCRETSİZ TESLİMAT fırsatları SSS\"]"));
+        dashboardButton.click();
+
+        WebElement markalar = driver.findElement(AppiumBy.xpath("//XCUIElementTypeButton[contains(@name, \"MarkalarSSS\")]"));
+        markalar.click();
+
+        fingerSwipe(driver, 100, 800, 100, 400, 1000);
+
+        WebElement kampanyalar = driver.findElement(AppiumBy.xpath("//XCUIElementTypeButton[contains(@name, \"KampanyalarSSS\")]"));
+        kampanyalar.click();
+    }
+
     public static void fingerSwipe(AppiumDriver driver, int startX, int startY, int endX, int endY, long timeInMillis) {
         PointerInput touchAction = new PointerInput(PointerInput.Kind.TOUCH, "touchAction");
         Sequence swipe = new Sequence(touchAction, 0);
