@@ -22,12 +22,12 @@ public class IOSTest extends BaseTest {
         WebElement dashboardButton = driver.findElement(AppiumBy.xpath("//XCUIElementTypeStaticText[@name=\"81 ilde mağazadan ÜCRETSİZ TESLİMAT fırsatları\"]"));
         dashboardButton.click();
 
-        WebElement markalar = driver.findElement(AppiumBy.xpath("//XCUIElementTypeButton[contains(@name, \"Markalar\")]"));
+        WebElement markalar = driver.findElement(AppiumBy.xpath("//XCUIElementTypeButton[contains(@name, \"Markalarrr\")]"));
         markalar.click();
 
         fingerSwipe(driver, 100, 800, 100, 400, 1000);
 
-        WebElement kampanyalar = driver.findElement(AppiumBy.xpath("//XCUIElementTypeButton[contains(@name, \"Kampanyalar\")]"));
+        WebElement kampanyalar = driver.findElement(AppiumBy.xpath("//XCUIElementTypeButton[contains(@name, \"Kampanyalarrr\")]"));
         kampanyalar.click();
     }
 
