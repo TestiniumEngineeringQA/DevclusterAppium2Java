@@ -14,13 +14,13 @@ public class AndroidTest extends BaseTest {
 
         Thread.sleep(2000);
 
-        WebElement kategorilerButton = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"com.gratis.android:id/navigation_bar_item_small_label_view\" and @text=\"Kategoriler\"]"));
+        WebElement kategorilerButton = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"com.gratis.android:id/navigation_bar_item_small_label_view\" and @text=\"Kategorilersss\"]"));
         kategorilerButton.click();
         logger.info("Clicked to Kategoriler Button");
 
         Thread.sleep(2000);
 
-        WebElement makyajButton = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"com.gratis.android:id/category_name\" and @text=\"Makyaj\"]"));
+        WebElement makyajButton = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"com.gratis.android:id/category_name\" and @text=\"Makyajsss\"]"));
         makyajButton.click();
         logger.info("Clicked to Makyaj Button");
 
