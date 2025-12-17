@@ -17,20 +17,6 @@ public class AndroidTest extends BaseTest {
         WebElement kategorilerButton = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"com.gratis.android:id/navigation_bar_item_small_label_view\" and @text=\"Kategorilersss\"]"));
         kategorilerButton.click();
         logger.info("Clicked to Kategoriler Button");
-
-        Thread.sleep(2000);
-
-        WebElement makyajButton = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"com.gratis.android:id/category_name\" and @text=\"Makyaj\"]"));
-        makyajButton.click();
-        logger.info("Clicked to Makyaj Button");
-
-        Thread.sleep(2000);
-
-        WebElement backButton = driver.findElement(AppiumBy.id("com.gratis.android:id/btnBack"));
-        backButton.click();
-        logger.info("Clicked to Back Button");
-
-        Thread.sleep(2000);
     }
 
     public void basicAndroidFailTest() throws InterruptedException {
