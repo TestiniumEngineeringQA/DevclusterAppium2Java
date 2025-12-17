@@ -14,7 +14,7 @@ public class AndroidTest extends BaseTest {
 
         Thread.sleep(2000);
 
-        WebElement kategorilerButton = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"com.gratis.android:id/navigation_bar_item_small_label_view\" and @text=\"Kategorilersss\"]"));
+        WebElement kategorilerButton = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"com.gratis.android:id/navigation_bar_item_small_label_view\" and @text=\"Kategoriler\"]"));
         kategorilerButton.click();
         logger.info("Clicked to Kategoriler Button");
     }
