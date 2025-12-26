@@ -58,7 +58,6 @@
         </dependency>
 
 
-
         <dependency>
             <groupId>com.testinium</groupId>
             <artifactId>testinium-appium2-driver</artifactId>
