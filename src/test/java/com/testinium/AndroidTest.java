@@ -1,6 +1,7 @@
 package com.testinium;
 
 import io.appium.java_client.AppiumBy;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebElement;
 
@@ -19,6 +20,21 @@ public class AndroidTest extends BaseTest {
         logger.info("Clicked to Kategoriler Button");
     }
 
+    @Test
+    @Disabled("Geçici olarak kapalı / refactor bekliyor")
+    public void skippedTest() throws InterruptedException {
+        WebElement generalButton = driver.findElement(AppiumBy.xpath("(//android.widget.ImageView[@resource-id=\"com.gratis.android:id/navigation_bar_item_icon_view\"])[1]"));
+        generalButton.click();
+        logger.info("Clicked to HomePage");
+
+        Thread.sleep(2000);
+
+        WebElement kategorilerButton = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"com.gratis.android:id/navigation_bar_item_small_label_view\" and @text=\"Kategoriler\"]"));
+        kategorilerButton.click();
+        logger.info("Clicked to Kategoriler Button");
+    }
+
+    @Test
     public void basicAndroidFailTest() throws InterruptedException {
         WebElement generalButton = driver.findElement(AppiumBy.xpath("(//android.widget.ImageView[@resource-id=\"com.gratis.android:id/navigation_bar_item_icon_view_error\"])[1]"));
         generalButton.click();
