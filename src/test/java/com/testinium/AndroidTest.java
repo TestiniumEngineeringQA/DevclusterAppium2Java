@@ -11,15 +11,11 @@ public class AndroidTest extends BaseTest {
     public void basicAndroidTest() throws InterruptedException {
         Thread.sleep(20000);
 
-        WebElement generalButton = driver.findElement(AppiumBy.xpath("(//android.widget.ImageView[@resource-id=\"com.gratis.android:id/navigation_bar_item_icon_view\"])[1]"));
+        WebElement generalButton = driver.findElement(AppiumBy.xpath("//*[contains(@resource-id, \"com.gratis.android:id/navigation_bar_item_small_label_view\") and contains(@text, \"Kategoriler\")]"));
         generalButton.click();
-        logger.info("Clicked to HomePage");
+        logger.info("Clicked to Kategoriler");
 
         Thread.sleep(2000);
-
-        WebElement kategorilerButton = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"com.gratis.android:id/navigation_bar_item_small_label_view\" and @text=\"Kategoriler\"]"));
-        kategorilerButton.click();
-        logger.info("Clicked to Kategoriler Button");
     }
 
     @Test
