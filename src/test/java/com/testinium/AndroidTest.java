@@ -9,6 +9,8 @@ public class AndroidTest extends BaseTest {
 
     @Test
     public void basicAndroidTest() throws InterruptedException {
+        Thread.sleep(20000);
+
         WebElement generalButton = driver.findElement(AppiumBy.xpath("(//android.widget.ImageView[@resource-id=\"com.gratis.android:id/navigation_bar_item_icon_view\"])[1]"));
         generalButton.click();
         logger.info("Clicked to HomePage");
