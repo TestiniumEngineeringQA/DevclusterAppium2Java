@@ -15,15 +15,15 @@ public class IOSTest extends BaseTest {
 
     @Test
     public void basicIosTest() throws InterruptedException {
-        System.out.println("StartIos test");
-        fingerSwipe(driver, 100, 800, 100, 600, 1000);
+        //System.out.println("StartIos test");
+        //fingerSwipe(driver, 100, 800, 100, 600, 1000);
         Thread.sleep(2000);
 
-        WebElement dashboardButton = driver.findElement(AppiumBy.xpath("//XCUIElementTypeApplication[@name=\"Gratis\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther"));
-        dashboardButton.click();
+        //WebElement dashboardButton = driver.findElement(AppiumBy.xpath("//XCUIElementTypeApplication[@name=\"Gratis\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther"));
+        //dashboardButton.click();
 
-        //WebElement markalar = driver.findElement(AppiumBy.xpath("//XCUIElementTypeButton[contains(@name, \"Markalarrr\")]"));
-        //markalar.click();
+        WebElement markalar = driver.findElement(AppiumBy.xpath("//XCUIElementTypeButton[contains(@name, \"Markalar\")]"));
+        markalar.click();
 
         //fingerSwipe(driver, 100, 800, 100, 400, 1000);
 
