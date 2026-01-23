@@ -22,7 +22,7 @@ public class IOSTest extends BaseTest {
         //WebElement dashboardButton = driver.findElement(AppiumBy.xpath("//XCUIElementTypeApplication[@name=\"Gratis\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther"));
         //dashboardButton.click();
 
-        WebElement markalar = driver.findElement(AppiumBy.xpath("//XCUIElementTypeButton[contains(@name, \"Markalar\")]"));
+        WebElement markalar = driver.findElement(AppiumBy.xpath("//XCUIElementTypeButton[contains(@name, \"Kategoriler\")]"));
         markalar.click();
 
         //fingerSwipe(driver, 100, 800, 100, 400, 1000);
