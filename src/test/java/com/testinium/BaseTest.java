@@ -51,6 +51,12 @@ public abstract class BaseTest {
                 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
                 appiumFluentWait = new FluentWait<AppiumDriver>(driver);
 
+                String totalRetryCount = System.getenv("TOTAL_RETRY_COUNT");
+                String currentRetryCount = System.getenv("CURRENT_RETRY_COUNT");
+
+                System.out.println(">>> [TOTAL_RETRY_COUNT] : " + totalRetryCount);
+                System.out.println(">>> [CURRENT_RETRY_COUNT] : " + currentRetryCount);
+
             } else {
                 DesiredCapabilities overridden = new DesiredCapabilities();
                 overridden.setCapability(Constants.PLATFORM_NAME, Platform.IOS);
@@ -62,6 +68,13 @@ public abstract class BaseTest {
 
                 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
                 appiumFluentWait = new FluentWait<AppiumDriver>(driver);
+
+                String totalRetryCount = System.getenv("TOTAL_RETRY_COUNT");
+                String currentRetryCount = System.getenv("CURRENT_RETRY_COUNT");
+
+                System.out.println(">>> [TOTAL_RETRY_COUNT] : " + totalRetryCount);
+                System.out.println(">>> [CURRENT_RETRY_COUNT] : " + currentRetryCount);
+
             }
             appiumFluentWait.withTimeout(Duration.ofSeconds(8))
                     .pollingEvery(Duration.ofMillis(350))
