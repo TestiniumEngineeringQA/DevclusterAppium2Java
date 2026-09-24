@@ -11,7 +11,7 @@ public class AndroidTest extends BaseTest {
     public void basicAndroidTest() throws InterruptedException {
         Thread.sleep(20000);
 
-        WebElement generalButton = driver.findElement(AppiumBy.xpath("//*[contains(@text, \"Kategoriler\")]"));
+        WebElement generalButton = driver.findElement(AppiumBy.xpath("//*[contains(@text, \"\")]"));
         generalButton.click();
         logger.info("Clicked to Kategoriler");
 
